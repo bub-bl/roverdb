@@ -1,0 +1,21 @@
+[package]
+name = "engine"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lints.rust]
+unused = "allow"
+
+[dependencies]
+tokio = { version = "1.35", features = ["full"] }
+bitflags = "2.4"
+rand = "0.8"
+serde = { version = "1.0.195", features = ["derive"] }
+names = "0.14"
+fake = { version = "2.9.2", features = ["derive", "uuid", "time"] }
+thiserror = "1.0"
+anyhow = "1.0"
+toml = "0.8"
+ts-rs = "7.1"
