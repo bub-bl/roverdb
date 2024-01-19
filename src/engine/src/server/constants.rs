@@ -1,0 +1,4 @@
+pub const DEFAULT_MAX_BUFFER_SIZE: usize = 1024;
+pub const DEFAULT_MAX_CONNECTIONS: u16 = 32;
+pub const DEFAULT_MAX_THREADS: usize = 4;
+pub const DEFAULT_THREAD_STACK_SIZE: usize = 1024 * 1024;

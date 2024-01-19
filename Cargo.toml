@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = [
+    "src/core",
+    "src/engine",
+    "examples/client",
+]

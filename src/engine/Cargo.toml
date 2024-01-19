@@ -1,21 +1,107 @@
 [package]
 name = "engine"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[env]
+
+[lib]
+name = "roverdb"
+path = "src/main.rs"
 
 [lints.rust]
 unused = "allow"
 
 [dependencies]
+# -- Libs
+rover_core = { path = "../core" }
+
+# -- Futures
 tokio = { version = "1.35", features = ["full"] }
-bitflags = "2.4"
-rand = "0.8"
-serde = { version = "1.0.195", features = ["derive"] }
+
+# -- Json
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# -- Fake Data's
 names = "0.14"
 fake = { version = "2.9.2", features = ["derive", "uuid", "time"] }
-thiserror = "1.0"
+
+# -- Error handling
 anyhow = "1.0"
+thiserror = "1.0"
+
+# -- CLI / Logging
+clap = "4.4"
+indicatif = "0.17"
+tracing = "0.1"
+
+# -- Directories
+walkdir = "2.4"
+dirs = "5.0"
+tempfile = "3.9"
+glob = "0.3"
+notify = "6.1"
+
+# -- System
+sysinfo = "0.30"
+
+# -- Benchmarks
+criterion = "0.5"
+
+# -- Memory
+bincode = "2.0.0-rc.3"
+libloading = "0.8"
+memoffset = "0.9"
+
+# -- Extensions
+extend = "1.2"
+stdext = "0.3"
+tryhard = "0.5"
+spinners = "4.1"
+
+# -- Compression
+flate2 = "1.0"
+lz4 = "1.24"
+brotli = "3.4"
+zip = "0.10.0-alpha"
+
+# -- Web Socket
+tungstenite = "0.21"
+message-io = "0.18"
+
+# -- Hashing
+hmac = "0.12"
+sha2 = "0.10"
+crypto = "0.5.1"
+
+# -- Mime Types
+infer = "0.15"
+mime = "0.3"
+
+# -- Configuration
+config = "0.13"
+cfg-if = "1.0"
 toml = "0.8"
+
+# -- Generators
 ts-rs = "7.1"
+
+# -- Others
+open = "5.0"
+rust-i18n = "2.3"
+validator = "0.16"
+sentry = "0.32"
+digest = "0.10"
+dns-lookup = "2.0"
+nject = "0.3"
+regex = "1.10"
+lazy-regex = "3.1"
+lazy_static = "1.4"
+chrono = "0.4"
+bitflags = "2.4"
+rand = "0.8"
+derive_more = { version = "1.0.0-beta", features = ["from"] }
+uuid = { version = "1.6", features = ["v4", "fast-rng"] }
