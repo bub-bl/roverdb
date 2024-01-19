@@ -91,7 +91,7 @@ ts-rs = "7.1"
 
 # -- Others
 open = "5.0"
-rust-i18n = "2.3"
+rust-i18n = "3.0"
 validator = "0.16"
 sentry = "0.32"
 digest = "0.10"
