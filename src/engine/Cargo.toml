@@ -7,6 +7,10 @@ edition = "2021"
 name = "engine"
 path = "src/main.rs"
 
+[lib]
+name = "engine"
+path = "src/lib.rs"
+
 [dependencies]
 rover_core = { path = "../core" }
 clap = "4.4.18"
