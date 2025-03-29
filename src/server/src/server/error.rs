@@ -1,4 +1,3 @@
-use std::net::SocketAddr;
 use thiserror::Error;
 
 #[derive(Debug, Error)]

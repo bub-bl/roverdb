@@ -31,8 +31,6 @@ impl Listener {
     }
 
     async fn handle_client(client: &mut TcpStream) {
-        println!("Enculer");
-
         let mut buffer = [0u8; 1024];
         let response = client.read(&mut buffer).await.map_err(|_| ListenerError::BindFailed);
 
